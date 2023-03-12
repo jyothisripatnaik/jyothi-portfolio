@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio-websites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/882c824b75.js" crossorigin="anonymous"></script>
+    <style>
+        
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main h1{text-align: center;padding: 27px 0;}
+a{text-decoration: none;}
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  margin: 0;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+  background: linear-gradient(to bottom left, #FF004F 40%, #fff 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  text-align: center;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">portfolio</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <h1>My Website projects</h1>
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/taste-element.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Taste Elements</h2>
+                <a href="http://tasteelement.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/genkii.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Genkii products</h2>
+                <a href="http://genkiproducts.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/adoverseas.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Ad overseas</h2>
+                <a href="http://adoverseas.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/kutumbaevents.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">kutumbaevents</h2>
+                <a href="http://kutumbaevents.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/farmaravinda.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Farm Aravinda</h2>
+                <a href="http://farmaravinda.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/viserve.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Viserve</h2>
+                <a href="http://viserv.co.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/innomatics.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Innomatics Research Labs</h2>
+                <a href="https://www.innomatics.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/mopedo.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Mopedo Bike</h2>
+                <a href="https://mopedo.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/rojas.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Rojas Group</h2>
+                <a href="http://rojasgroup.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/star-women.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Star Women Hospitals</h2>
+                <a href="http://starwomenandchildrenhospital.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/kims-college-list.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Kims college</h2>
+                <a href="http://kimscolleges.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/kims-hotel.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Kims Hotel Management</h2>
+                <a href="http://kimscollegeofhotelmanagement.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/kims-degree.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Kims Degree college</h2>
+                <a href="http://kimsdegreepg.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/kims-pg.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Kims Pg college</h2>
+                <a href="http://kimspg.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/vits-college.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Vits college</h2>
+                <a href="http://vits.ac.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/nutrific.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Nutrific</h2>
+                <a href="http://nutrific.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/vueinteriors.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Interiors</h2>
+                <a href="http://thevueinteriors.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/saimaruthi.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Sai Maruthi Hospitals</h2>
+                <a href="http://www.srisaimaruthihospital.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-circles.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel circles</h2>
+                <a href="http://chaivel.com/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-classifieds.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel Classifieds</h2>
+                <a href="http://chaivel.com/classifides.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-infoservices.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel info services</h2>
+                <a href="http://chaivel.com/info-services.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-job-portal.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel Job Portal</h2>
+                <a href="http://chaivel.com/jobs.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-online-shopping.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel Online shopping</h2>
+                <a href="http://chaivel.com/shops_list.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-real-estate.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel Realestate</h2>
+                <a href="http://chaivel.com/real_estate_list.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/chaivel-resortrs.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Chaivel Resorts</h2>
+                <a href="http://chaivel.com/resorts.php"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="images/projects/srkhonda.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Srk Honda</h2>
+                <a href="http://srkhonda.in/"><button class="btn card_btn">Visit Website</button></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Jyothisri</p>
+    </div>
+   
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    </body>
+    </html>
