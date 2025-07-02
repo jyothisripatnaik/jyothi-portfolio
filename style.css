@@ -20,10 +20,9 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/jyo-1.png);
-    background-size: unset;
+    background-image: url(images/jyo.jpg);
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 .container{
     padding: 10px 10%;
